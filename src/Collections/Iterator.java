@@ -7,16 +7,16 @@ import java.util.Objects;
 public class Iterator {
     public static void main(String[] args) {
         Collection list = new ArrayList();
-        list.add(new A(111,"A"));
-        list.add(new A(222,"B"));
-        list.add(new A(333,"C"));
+        list.add(new A(111, "A"));
+        list.add(new A(222, "B"));
+        list.add(new A(333, "C"));
 
         // 得到实现类对象的迭代器
         java.util.Iterator iterator = list.iterator();
 
         // 快捷键itit，迭代器遍历
         while (iterator.hasNext()) {// 判断接下来是否还有数据，返回值为bool
-            Object obj =  iterator.next();// 得到元素
+            Object obj = iterator.next();// 得到元素
             System.out.println(obj);
         }
 
@@ -26,11 +26,7 @@ public class Iterator {
             Object obj = iterator.next();
             System.out.println(obj);
         }
-
-
     }
-
-
 }
 
 class A{
